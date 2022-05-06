@@ -21,7 +21,7 @@ export class ConnectionService {
         message: 'Network Disconnected',
         duration: 3000,
         position: 'top',
-        cssClass: "text-center"
+        cssClass: 'text-center'
       }).then((obj) => obj.present());
     });
     this.network.onConnect().subscribe(() => {
@@ -31,7 +31,7 @@ export class ConnectionService {
           message: 'Network Connected',
           duration: 3000,
           position: 'top',
-          cssClass: "text-center"
+          cssClass: 'text-center'
         }).then((obj) => obj.present());
         this.nativeStorage.getItem('requests').then((data) => {
           /*
